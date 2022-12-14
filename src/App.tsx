@@ -6,9 +6,7 @@ type GameState = Array<CellValue>;
 
 function App() {
   const [turn, setTurn] = useState<CellValue>("x");
-
   const [size, setSize] = useState<number>(3);
-
   const [state, setState] = useState<GameState>([
     ...Array(Math.pow(size, 2)).fill(null),
   ]);
